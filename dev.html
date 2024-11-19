@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cursor Animation with View Following</title>
+    <style>
+        /* Container representing the browser window */
+        #browser-window {
+            width: 800px;
+            height: 600px;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid #000;
+            /* Zoomed-in effect */
+            transform: scale(1);
+            /* We will update transform-origin dynamically */
+            margin: 50px auto;
+        }
+
+
+        /* Mouse cursor styling */
+        #mouse-cursor {
+            position: absolute;
+            width: 16px;
+            height: 24px;
+            background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%2224%22%20viewBox%3D%220%200%2016%2024%22%3E%3Cpolygon%20points%3D%220%2C0%2016%2C12%208%2C12%208%2C24%200%2C0%22%20fill%3D%22black%22/%3E%3C/svg%3E') no-repeat center center;
+            background-size: contain;
+            pointer-events: none;
+            /* Cursor starts at the center */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: left 0.5s ease, top 0.5s ease;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="browser-window">
+        <div>
+
+        </div>
+        <div id="mouse-cursor"></div>
+    </div>
+
+    <script>
+        // Function to move the cursor to a specific (x, y) coordinate
+        function moveCursorTo(x, y) {
+            var cursor = document.getElementById('mouse-cursor');
+            var browserWindow = document.getElementById('browser-window');
+
+            // Update cursor position
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
+
+            // Calculate transform-origin to keep the cursor centered
+            var originX = (x / browserWindow.clientWidth) * 100;
+            var originY = (y / browserWindow.clientHeight) * 100;
+
+            browserWindow.style.transformOrigin = originX + '% ' + originY + '%';
+        }
+
+        // Example usage: Move cursor to (200, 150) after 2 seconds
+        setTimeout(function() {
+            moveCursorTo(200, 150);
+            setTimeout(function() {
+                moveCursorTo(300, 350);
+            }, 2000);
+        }, 2000);
+    </script>
+</body>
+</html>

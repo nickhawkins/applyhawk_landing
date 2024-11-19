@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind Example</title>
-  <link href="output.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<title>ApplyHawk.ai</title>
+	<link href="output.css" rel="stylesheet">
+
+	<!-- Scripts -->
+	<script src="./script.js?v=1.0.1"></script>
 </head>
 <body class="h-full min-h-screen w-screen bg-zinc-900">
 
@@ -68,7 +74,41 @@
 					</div>
 					<div id="parent" class="bg-zinc-900 overflow-hidden flex flex-col items-between justify-between p-6">
 
-						<div id="1" class="w-full rounded-xl bg-zinc-600 bg-zinc-800 p-4 ring-1 ring-inset ring-zinc-500 shadow-2xl transition-colors duration-1000 mb-4">
+						<div id="1" class="w-full rounded-xl bg-zinc-600 bg-zinc-800 p-4 ring-1 ring-inset ring-zinc-500 shadow-2xl transition-colors duration-1000 mb-4 opacity-0">
+							<div class="flex">
+								<div class="relative flex items-center justify-center w-4 px-6">
+									<div id="1a" class="absolute rounded-full w-4 h-4 bg-green-400 bg-zinc-600 flex items-center justify-center opacity-50 transition-colors duration-1000"></div>
+									<div id="1b" class="absolute rounded-full w-2 h-2 bg-green-400 bg-zinc-600 transition-colors duration-1000"></div>
+								</div>
+								<div>
+									<div class="text-sm font-semibold mb-1 text-white">
+										Filling out job post
+									</div>
+									<div class="text-xs text-gray-300">
+										Selecting your chosen job options.
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="2" class="w-full rounded-xl bg-zinc-600 bg-zinc-800 p-4 ring-1 ring-inset ring-zinc-500 shadow-2xl transition-colors duration-1000 opacity-0">
+							<div class="flex">
+								<div class="relative flex items-center justify-center w-4 px-6">
+									<div id="2a" class="absolute rounded-full w-4 h-4 bg-green-400 bg-zinc-600 flex items-center justify-center opacity-50 transition-colors duration-1000"></div>
+									<div id="2b" class="absolute rounded-full w-2 h-2 bg-green-400 bg-zinc-600 transition-colors duration-1000"></div>
+								</div>
+								<div>
+									<div class="text-sm font-semibold mb-1 text-white">
+										Smart Proposal Generation
+									</div>
+									<div class="text-xs text-gray-300">
+										Crafting a proposal tailored to the job post.
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- <div id="1" class="w-full rounded-xl bg-zinc-600 bg-zinc-800 p-4 ring-1 ring-inset ring-zinc-500 shadow-2xl transition-colors duration-1000 mb-4">
 							<div class="flex">
 								<div class="relative flex items-center justify-center w-4 px-6">
 									<div id="1a" class="absolute rounded-full w-4 h-4 bg-green-400 bg-zinc-600 flex items-center justify-center opacity-50 transition-colors duration-1000"></div>
@@ -136,22 +176,22 @@
 							</div>
 						</div>
 
-					</div>
-					<div class="flex items-center p-3 bg-zinc-800">
-						<div
-							type="button"
-							class="rounded-md flex items-center justify-center bg-gray-700 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-600 color-wave w-full">
-								Running
-						</div>
-					</div>
+						<div id="complete" class="text-center fade-in py-[6.5rem] hidden w-full">
+							<div class="w-full flex justify-center">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="lightgreen" style="width: 4rem; height: 4rem;">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+								</svg>	
+							</div>
+							<div class="text-xl font-semibold text-white mt-4 mb-2">Proposal submitted</div>
+							<div class="text-sm font-base text-gray-400">ApplyHawk has submitted the proposal.</div>
+						</div> -->
 				</div>
 			</div>
 		</div>
 
   	</div>  
 
-	<!-- Scripts -->
-	<script src="./script.js"></script>
+
 
 </body>
 </html>
