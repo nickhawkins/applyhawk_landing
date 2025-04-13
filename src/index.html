@@ -8,243 +8,138 @@
 	<meta http-equiv="Expires" content="0">
 	<title>ApplyHawk.ai</title>
 	<link href="output.css" rel="stylesheet">
-
-	<!-- Scripts -->
 	<script src="./script.js?v=1.0.1"></script>
-
-	<!-- Styles -->
-	<!-- <style>
-		#alert {
-            transition: left 0.5s ease, top 0.5s ease;
-        }
-	</style> -->
-
 </head>
-<body class="h-full min-h-screen w-screen bg-zinc-900">
+<body class="bg-gray-950 antialiased">
+	<div class="relative">
 
-	<!-- 
-		Increased job success
-		Writes custom job proposals
-		Maximize Your Earnings
-		Land more jobs and grow your freelance income faster.	
-	-->
+		<!-- Grid pattern -->
+		<svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+			<defs>
+			<pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+				<path d="M.5 200V.5H200" fill="none" />
+			</pattern>
+			</defs>
+			<rect width="100%" height="100%" stroke-width="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
+		</svg>
 
-	<!-- Faded background -->
-	<div class="absolute inset-x-0 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-		<div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-	</div> 
+		<div class="relative px-6 lg:px-8">
+			<div class="mx-auto max-w-2xl lg:max-w-7xl">
 
-	<div class="h-screen max-w-7xl mx-auto lg:flex">
+				<!-- Nav -->
+				<header class="pt-12 sm:pt-16" data-headlessui-state="">
+					<div class="">
+						<div class="relative flex justify-between group/row relative isolate pt-[calc(--spacing(2)+1px)] last:pb-[calc(--spacing(2)+1px)]">
 
-		<!-- Left -->
-		<div class="w-full lg:w-1/2 flex items-center justify-center px-8 lg:px-4">
-			<div>
-				<div class="flex items-center mb-12 pt-8 lg:pt-0">
-					<img src="./logo.webp" class="w-8 h-8 rounded-full" />
-					<div class="ml-2 text-base font-bold tracking-tight text-white">
-						ApplyHawk
-					</div>
-				</div>
-				<div class="pt-16 pb-32 lg:pt-0 lg:pb-0">
+							<!-- Border -->
+							<div aria-hidden="true" class="absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2">
+								<div class="absolute inset-x-0 top-0 border-t border-black/5"></div>
+								<div class="absolute inset-x-0 top-2 border-t border-black/5"></div>
+								<div class="absolute inset-x-0 bottom-0 hidden border-b border-black/5 group-last/row:block"></div>
+								<div class="absolute inset-x-0 bottom-2 hidden border-b border-black/5 group-last/row:block"></div>
+							</div>
 
-					
-					<h1 class="text-pretty font-bold tracking-tight text-white text-5xl lg:text-7xl text-center lg:text-left mb-8">Land More Jobs with <span class="color-wave-text">AI-Powered</span> Proposals</h1>
-					<p class="text-prett font-medium text-gray-400 text-lg lg:text-xl text-center lg:text-left mb-12">Automate Your Upwork Applications and Focus on What You Do Best.</p>
-					<div class="flex justify-center lg:justify-start">
-						<a
-							href="https://applyhawk.web.app"
-							type="button"
-							class="w-[8rem] fade-in flex items-center justify-center rounded-md px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 color-wave">
-								<div class="mr-1">Get started</div>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="size-4">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+							<!-- Logo -->
+							<div class="relative flex gap-6">
+								<div class="py-3 group/item relative">
+									<div class="flex items-center">
+										<img class="h-[34px] rounded-full" src="logo.webp" alt="DigitalHawk.ai">
+										<div class="ml-3 text-lg font-bold text-white"">ApplyHawk</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Desktop nav -->
+							<nav class="relative hidden lg:flex items-center">
+								<div>
+									<a class="flex items-center px-4 py-1 text-base font-medium text-white bg-blend-multiply hover:bg-black/[2.5%] rounded-full border border-transparent bg-white/15 ring-1 shadow-md hover:shadow-lg transition-all duration-300 ease-in-out ring-[#D15052]/15" data-headlessui-state="" href="https://applyhawk.web.app/login">Login</a>
+								</div>
+							</nav>
+
+							<!-- Mobile nav button -->
+							<button class="flex size-12 items-center justify-center self-center rounded-lg hover:bg-black/5 lg:hidden" aria-label="Open main menu" id="headlessui-disclosure-button-:Rsm6fkq:" type="button" aria-expanded="false" data-headlessui-state="">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="size-6">
+								<path fill-rule="evenodd" d="M3 9a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9Zm0 6.75a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"></path>
 								</svg>
-						</a>
+							</button>
+							
+						</div>
+					</div>
+				</header>
+
+				<!-- Hero -->
+				<div class="grid grid-cols-3 gap-4">
+					<div class="col-span-3 lg:col-span-2 flex flex-col justify-center pt-16 pb-16 lg:pt-0 lg:pb-0">
+						<h1 class="font-display text-7xl font-medium tracking-tight text-balance text-white">Land More Upwork Jobs with <span class="color-wave-text">AI-Powered Proposals</span></h1>
+						<p class="mt-8 max-w-lg text-xl/7 font-medium text-gray-100 sm:text-xl/8">ApplyHawk crafts winning proposals for you allowing you to focus on income generation.</p>
+						<div class="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
+							<a 
+								class="color-wave inline-flex items-center justify-center px-4 py-1 rounded-full border border-transparent bg-gray-950 hover:bg-gray-900 shadow-md hover:shadow-xl transition-all duration-300 ease-in-out text-base font-medium whitespace-nowrap text-white" 
+								data-headlessui-state="" 
+								href="https://applyhawk.web.app/login">
+								Get started now
+							</a>
+						</div>
+					</div>
+					<div class="col-span-3 lg:col-span-1 flex items-center justify-center pb-16 lg:pb-0 flex items-center justify-center">
+
+						<div class="w-[100%] rounded-xl bg-zinc-600 p-2 ring-1 ring-inset ring-zinc-500 shadow-2xl">
+
+							<div class="mb-2 flex">
+								<div class="h-2 w-2 bg-red-400 rounded-full mr-1"></div>
+								<div class="h-2 w-2 bg-orange-400 rounded-full mr-1"></div>
+								<div class="h-2 w-2 bg-green-400 rounded-full mr-1"></div>
+							</div>
+							<div class="w-full fade-in rounded-lg">
+
+								<div class="bg-zinc-900 relative">
+				
+									<!-- Alert -->
+									<div class="w-full flex justify-center">
+										<div class="text-white bg-slate bg-zinc-700 shadow-2xl ring-1 ring-inset ring-white/10 rounded-br-lg rounded-bl-lg py-4 px-6 pointer-events-auto">
+											<div class="flex items-center">                      
+												<div class="mr-5">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" view-box="0 0 24 24" class="size-6 text-white animate-spin">
+														<circle class="opacity-75" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+														<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4 zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+													</svg>
+												</div>	
+												<div class="mr-4">
+													<span class="flex flex-col">
+														<span class="block text-base/6 font-semibold text-white">
+															Applying for job
+														</span>
+														<span class="block text-xs text-gray-300">
+															Press escape to cancel.
+														</span>
+													</span>
+												</div>
+											</div>	
+										</div>
+									</div>
+			
+									<!-- Text area -->
+									<div class="p-6 mt-3">
+										<label for="proposal" class="text-sm/6 font-semibold text-white">
+										  Proposal
+										</label>
+										<div class="mt-2">
+										  	<div style="height: 390px" id="fake-textarea" class="px-3 block w-full rounded-md border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-white/10 sm:text-sm/6" style="white-space: pre-wrap; overflow-wrap: break-word;"></div>
+										</div>
+									</div>
+									  
+								</div>	
+							</div>	
+
+						</div>
+
 					</div>
 				</div>
+
 			</div>
 		</div>
-		
-		<!-- Right -->
-		<div class="w-full lg:w-1/2 flex items-center justify-center px-8 lg:px-16 pb-32 lg:pb-0">
-			<div class="w-full rounded-xl bg-zinc-600 p-2 ring-1 ring-inset ring-zinc-500 shadow-2xl">
-				<div class="mb-2 flex">
-					<div class="h-2 w-2 bg-red-400 rounded-full mr-1"></div>
-					<div class="h-2 w-2 bg-orange-400 rounded-full mr-1"></div>
-					<div class="h-2 w-2 bg-green-400 rounded-full mr-1"></div>
-				</div>
-				<div class="w-full fade-in rounded-md overflow-hidden">
 
-					<div id="scroll" class="bg-zinc-900 overflow-scroll relative h-[24rem]">
-	
-						<!-- Alert -->
-						<div id="alert" class="flex justify-center w-full absolute">
-							<div class="color-wave rounded-md p-1">
-								<div class="flex items-center text-white text-center bg-zinc-900 rounded-sm py-3 px-6">
-									<div class="text-sm/6 font-semibold">
-										Crafting AI proposal..
-									</div>
-								</div>
-							</div>
-						</div>
+	</div>
+ </body>
 
-						<!-- Text area -->
-						<div class="w-[100%] h-[24rem] flex items-center p-6">
-							<div class="w-[100%]">
-								<label htmlFor="openai_api_key" class="text-sm/6 font-semibold text-white">
-									Proposal
-								</label>
-								<div class="mt-2">
-									<textarea
-										id="textarea"
-										name="textarea"
-										type="text"
-										rows="4"
-										class="px-3 block w-full rounded-md border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm/6">
-									</textarea>	
-								</div>
-							</div>
-						</div>
-
-					</div>	
-				</div>	
-			</div>	
-		</div>
-
-
-
-  	</div>  
-
-
-
-</body>
 </html>
-
-
-
-		<!-- Right -->
-		<!-- <div class="w-full lg:w-1/2 flex items-center justify-center px-8 lg:px-16 pb-32 lg:pb-0">
-			<div class="w-full rounded-xl bg-zinc-600 p-3 ring-1 ring-inset ring-zinc-500 shadow-2xl">
-				<div class="w-full fade-in rounded-md overflow-hidden">
-					<div class="flex items-center p-3 bg-zinc-800">
-						<img src="./logo.webp" class="w-6 h-6 rounded-full" />
-						<div class="ml-2 text-xs font-bold tracking-tight text-white">
-							ApplyHawk
-						</div>
-					</div>
-					<div id="parent" class="bg-zinc-900 overflow-hidden flex flex-col items-between justify-between p-6">
-
-						<div id="1" class="w-full rounded-xl bg-zinc-600 bg-zinc-800 p-4 ring-1 ring-inset ring-zinc-500 shadow-2xl transition-colors duration-1000 mb-4 opacity-0">
-							<div class="flex">
-								<div class="relative flex items-center justify-center w-4 px-6">
-									<div id="1a" class="absolute rounded-full w-4 h-4 bg-green-400 bg-zinc-600 flex items-center justify-center opacity-50 transition-colors duration-1000"></div>
-									<div id="1b" class="absolute rounded-full w-2 h-2 bg-green-400 bg-zinc-600 transition-colors duration-1000"></div>
-								</div>
-								<div>
-									<div class="text-sm font-semibold mb-1 text-white">
-										Filling out job post
-									</div>
-									<div class="text-xs text-gray-300">
-										Selecting your chosen job options.
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div id="2" class="w-full rounded-xl bg-zinc-600 bg-zinc-800 p-4 ring-1 ring-inset ring-zinc-500 shadow-2xl transition-colors duration-1000 opacity-0">
-							<div class="flex">
-								<div class="relative flex items-center justify-center w-4 px-6">
-									<div id="2a" class="absolute rounded-full w-4 h-4 bg-green-400 bg-zinc-600 flex items-center justify-center opacity-50 transition-colors duration-1000"></div>
-									<div id="2b" class="absolute rounded-full w-2 h-2 bg-green-400 bg-zinc-600 transition-colors duration-1000"></div>
-								</div>
-								<div>
-									<div class="text-sm font-semibold mb-1 text-white">
-										Smart Proposal Generation
-									</div>
-									<div class="text-xs text-gray-300">
-										Crafting a proposal tailored to the job post.
-									</div>
-								</div>
-							</div>
-						</div> -->
-
-						<!-- <div id="1" class="w-full rounded-xl bg-zinc-600 bg-zinc-800 p-4 ring-1 ring-inset ring-zinc-500 shadow-2xl transition-colors duration-1000 mb-4">
-							<div class="flex">
-								<div class="relative flex items-center justify-center w-4 px-6">
-									<div id="1a" class="absolute rounded-full w-4 h-4 bg-green-400 bg-zinc-600 flex items-center justify-center opacity-50 transition-colors duration-1000"></div>
-									<div id="1b" class="absolute rounded-full w-2 h-2 bg-green-400 bg-zinc-600 transition-colors duration-1000"></div>
-								</div>
-								<div>
-									<div class="text-sm font-semibold mb-1 text-white">
-										Filling out job post
-									</div>
-									<div class="text-xs text-gray-300">
-										Selecting your chosen job options.
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div id="2" class="w-full rounded-xl bg-zinc-600 bg-zinc-800 p-4 ring-1 ring-inset ring-zinc-500 shadow-2xl transition-colors duration-1000 mb-4">
-							<div class="flex">
-								<div class="relative flex items-center justify-center w-4 px-6">
-									<div id="2a" class="absolute rounded-full w-4 h-4 bg-green-400 bg-zinc-600 flex items-center justify-center opacity-50 transition-colors duration-1000"></div>
-									<div id="2b" class="absolute rounded-full w-2 h-2 bg-green-400 bg-zinc-600 transition-colors duration-1000"></div>
-								</div>
-								<div>
-									<div class="text-sm font-semibold mb-1 text-white">
-										Smart Proposal Generation
-									</div>
-									<div class="text-xs text-gray-300">
-										Crafting a proposal tailored to the job post.
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div id="3" class="w-full rounded-xl bg-zinc-600 bg-zinc-800 p-4 ring-1 ring-inset ring-zinc-500 shadow-2xl transition-colors duration-1000 mb-4">
-							<div class="flex">
-								<div class="relative flex items-center justify-center w-4 px-6">
-									<div id="3a" class="absolute rounded-full w-4 h-4 bg-green-400 bg-zinc-600 flex items-center justify-center opacity-50 transition-colors duration-1000"></div>
-									<div id="3b" class="absolute rounded-full w-2 h-2 bg-green-400 bg-zinc-600 transition-colors duration-1000"></div>
-								</div>
-								<div>
-									<div class="text-sm font-semibold mb-1 text-white">
-										Example Work
-									</div>
-									<div class="text-xs text-gray-300">
-										Attaching your example work.
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div id="4" class="w-full rounded-xl bg-zinc-600 bg-zinc-800 p-4 ring-1 ring-inset ring-zinc-500 shadow-2xl transition-colors duration-1000">
-							<div class="flex">
-								<div class="relative flex items-center justify-center w-4 px-6">
-									<div id="4a" class="absolute rounded-full w-4 h-4 bg-green-400 bg-zinc-600 flex items-center justify-center opacity-50 transition-colors duration-1000"></div>
-									<div id="4b" class="absolute rounded-full w-2 h-2 bg-green-400 bg-zinc-600 transition-colors duration-1000"></div>
-								</div>
-								<div>
-									<div class="text-sm font-semibold mb-1 text-white">
-										Submit
-									</div>
-									<div class="text-xs text-gray-300">
-										Submitting your proposal.
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div id="complete" class="text-center fade-in py-[6.5rem] hidden w-full">
-							<div class="w-full flex justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="lightgreen" style="width: 4rem; height: 4rem;">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-								</svg>	
-							</div>
-							<div class="text-xl font-semibold text-white mt-4 mb-2">Proposal submitted</div>
-							<div class="text-sm font-base text-gray-400">ApplyHawk has submitted the proposal.</div>
-						</div> -->
-				<!-- </div>
-			</div>
-		</div> -->
